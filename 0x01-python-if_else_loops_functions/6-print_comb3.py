@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for i in range(10):
-    for j in range(i+1, 10):
-        print("{:02d}".format(i) + ", {:02d}".format(j), end=", " if i < 9 or j < 8 else "\n")
+for i in range(1, 10):
+    for j in range(i):
+        print("{:02d}".format(j) + ", {:02d}".format(i), end=", " if i < 9 or j < 8 else "\n")
