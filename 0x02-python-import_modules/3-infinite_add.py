@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    av = sys.argv#!/usr/bin/python3
-if __name__ == "__main__":
-    import sys
     av = sys.argv
     sum = 0
     for x in range(1, len(av))
