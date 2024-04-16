@@ -16,7 +16,6 @@ def add_to_list_and_save(args):
         data = []
     data.extend(args)
     save_to_json_file(data, file_name)
-    print("Arguments added to the list and saved to", file_name)
 
 
 if __name__ == "__main__":
