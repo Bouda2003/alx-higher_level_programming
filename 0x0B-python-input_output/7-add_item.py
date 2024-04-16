@@ -6,6 +6,7 @@ from os import path
 from 5-save_to_json_file import save_to_json_file
 from 6-load_from_json_file import load_from_json_file
 
+
 def add_to_list_and_save(args):
     file_name = "add_item.json"
     if path.exists(file_name):
@@ -15,6 +16,8 @@ def add_to_list_and_save(args):
     data.extend(args)
     save_to_json_file(data, file_name)
     print("Arguments added to the list and saved to", file_name)
+
+
 if __name__ == "__main__":
     args = sys.argv[1:]
     add_to_list_and_save(args)
