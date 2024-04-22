@@ -23,10 +23,10 @@ class Rectangle(Base):
             TypeError: If either of x or y is not an int.
             ValueError: If either of x or y < 0.
         """
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self._width = width
+        self._height = height
+        self._x = x
+        self._y = y
         super().__init__(id)
 
     @property
