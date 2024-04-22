@@ -85,7 +85,9 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """Return a list of classes instantiated from a file of JSON strings
+        """Return a list of classes instantiated from a file of JSON strings.
+
+        Reads from `<cls.__name__>.json`.
 
         Returns:
             If the file does not exist - an empty list.
@@ -99,7 +101,7 @@ class Base:
         except IOError:
             return []
 
-        @classmethod
+    @classmethod
     def save_to_file_csv(cls, list_objs):
         """Write the CSV serialization of a list of objects to a file.
 
@@ -119,7 +121,7 @@ class Base:
                 for obj in list_objs:
                     writer.writerow(obj.to_dictionary())
 
-        @classmethod
+    @classmethod
     def load_from_file_csv(cls):
         """Return a list of classes instantiated from a CSV file.
 
