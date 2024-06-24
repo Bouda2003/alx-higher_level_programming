@@ -7,7 +7,7 @@ import sys
 import MySQLdb
 
 if __name__ == "__main__":
-    DB = MySQLdb.connect(usr=sys.argv[1], Pass=sys.argv[2], db=sys.argv[3])
+    DB = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     Cursor = DB.cursor()
     Cursor.execute("SELECT * FROM `states`")
-    [print(state) for state in Cursor.fetchall()]
+    {print(state) for state in Cursor.fetchall()}
