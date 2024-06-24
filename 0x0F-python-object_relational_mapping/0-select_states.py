@@ -10,4 +10,6 @@ if __name__ == "__main__":
     DB = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     Cursor = DB.cursor()
     Cursor.execute("SELECT * FROM `states`")
-    {print(state) for state in Cursor.fetchall()}
+    states = Cursor.fetchall()
+    for state in states:
+        print(state)
