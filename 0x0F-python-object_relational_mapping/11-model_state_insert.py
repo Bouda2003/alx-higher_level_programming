@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """
-script that prints all objects with letter a from the database hbtn_0e_6_usa
 Adds the State object "Louisiana" to the database hbtn_0e_6_usa.
  Usage: ./11-model_state_insert.py <mysql username> /
                                    <mysql password> /
