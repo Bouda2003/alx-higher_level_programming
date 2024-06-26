@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
 script that prints all objects with letter a from the database hbtn_0e_6_usa
-Usage: ./10-model_state_my_get.py <mysql username> /
+Adds the State object "Louisiana" to the database hbtn_0e_6_usa.
+ Usage: ./11-model_state_insert.py <mysql username> /
                                    <mysql password> /
                                    <database name>
-                                   <state name searched>
 """
 import sys
 from sqlalchemy import create_engine
