@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """
 script that prints all objects with letter a from the database hbtn_0e_6_usa
-Usage: ./9-model_state_filter_a.py <mysql username> /
-                                    <mysql password> /
-                                    <database name>
+Usage: ./10-model_state_my_get.py <mysql username> /
+                                   <mysql password> /
+                                   <database name>
+                                   <state name searched>
 """
 import sys
 from sqlalchemy import create_engine
