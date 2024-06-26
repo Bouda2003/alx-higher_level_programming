@@ -17,11 +17,12 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
+
     found = False
     for state in session.query(State):
         if state.name == sys.argv[4]:
             print("{}".format(state.id))
             found = True
             break
-        if found is False:
-            print("Not found")
+    if found is False:
+        print("Not found")
