@@ -6,7 +6,8 @@
 
 from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
-from relationship_state import Base, state
+
+Base = declarative_base()
 
 
 class City(Base):
